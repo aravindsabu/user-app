@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { SiginupComponent } from './siginup/siginup.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 const appRoutes:Routes=[
   {
     path:"",component:SiginupComponent
   },
   {
     path:"ok",component:SiginComponent
+  },
+  {
+    path:"done",component:DashboardComponent
   }
 ]
 
@@ -19,7 +23,8 @@ const appRoutes:Routes=[
   declarations: [
     AppComponent,
     SiginComponent,
-    SiginupComponent
+    SiginupComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
