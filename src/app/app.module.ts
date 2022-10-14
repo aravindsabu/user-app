@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SiginComponent } from './sigin/sigin.component';
 import { SiginupComponent } from './siginup/siginup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule } from '@angular/forms';
 const appRoutes:Routes=[
   {
     path:"",component:SiginupComponent
@@ -25,11 +26,13 @@ const appRoutes:Routes=[
     SiginComponent,
     SiginupComponent,
     DashboardComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
